@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 @import "~bulma/bulma";
 
@@ -26,4 +27,24 @@ html {
   justify-content: center;
   font-size: 10rem;
   flex-flow: column;
+}
+.navbar-burger{
+  visibility: hidden;
+
+}
+
+.navbar-menu{
+  visibility: visible;
+}
+
+@media (max-width: 600px) {
+  .navbar-menu{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-burger{
+    visibility: visible;
+  }
 }
